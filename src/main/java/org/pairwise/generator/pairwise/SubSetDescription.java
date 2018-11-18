@@ -1,4 +1,4 @@
-package org.pairwise.generator;
+package org.pairwise.generator.pairwise;
 
 import java.util.HashMap;
 import java.util.Map;

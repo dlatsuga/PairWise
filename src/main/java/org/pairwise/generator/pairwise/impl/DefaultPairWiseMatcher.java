@@ -1,9 +1,9 @@
 package org.pairwise.generator.pairwise.impl;
 
-import org.pairwise.generator.SetDescription;
-import org.pairwise.generator.SubSetDescription;
 import org.pairwise.generator.pairwise.PairWiseDuplicateChecker;
 import org.pairwise.generator.pairwise.PairWiseMatcher;
+import org.pairwise.generator.pairwise.SetDescription;
+import org.pairwise.generator.pairwise.SubSetDescription;
 
 import java.util.HashMap;
 import java.util.List;

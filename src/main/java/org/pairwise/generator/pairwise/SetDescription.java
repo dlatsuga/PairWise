@@ -1,4 +1,4 @@
-package org.pairwise.generator;
+package org.pairwise.generator.pairwise;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -100,7 +100,7 @@ public class SetDescription {
             }
         }
 
-        uniquePairsIndexes.forEach((k, v) -> System.out.println(k + ":\t" + v));
+        uniquePairsIndexes.forEach((k, v) -> System.out.println(k + ":\t" + v)); // TODO : Remove sout
         System.out.println("***********************************************************");
     }
 

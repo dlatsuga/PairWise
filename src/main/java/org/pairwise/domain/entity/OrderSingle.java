@@ -3,10 +3,10 @@ package org.pairwise.domain.entity;
 import java.math.BigDecimal;
 
 public class OrderSingle {
-    public Currency currency;
-    public Side side;
-    public BigDecimal quantity;
-    public BigDecimal price;
+    private Currency currency;
+    private Side side;
+    private BigDecimal quantity;
+    private BigDecimal price;
 
     public Currency getCurrency() {
         return currency;
@@ -44,6 +44,7 @@ public class OrderSingle {
     public String toString() {
         return "OrderSingle{" +
                 "currency=" + currency +
+                ", side=" + side +
                 ", quantity=" + quantity +
                 ", price=" + price +
                 '}';

@@ -9,9 +9,10 @@ import java.math.BigDecimal;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.pairwise.domain.builder.OrderSingleBuilder.anOrderSingle;
-import static org.pairwise.domain.entity.Currency.CHF;
 import static org.pairwise.domain.entity.Currency.USD;
 import static org.pairwise.matcher.OrderSingleMatcher.quantityGreaterThan;
+
+//import static org.pairwise.domain.entity.Currency.CHF;
 
 public class TestMain {
     private OrderSingle orderSingle;
@@ -20,7 +21,7 @@ public class TestMain {
     public static Object[][] dataProvider() {
         return new Object[][]{
                 {anOrderSingle()
-                        .withCurrency(CHF)
+//                        .withCurrency(CHF)
                         .withQuantity(new BigDecimal("1000"))
                         .withPrice(new BigDecimal("20"))
                         .build()

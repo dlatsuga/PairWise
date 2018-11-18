@@ -4,8 +4,8 @@ import org.pairwise.domain.entity.ParameterA;
 import org.pairwise.domain.entity.ParameterB;
 import org.pairwise.domain.entity.ParameterC;
 import org.pairwise.domain.entity.ParameterD;
-import org.pairwise.generator.SetDescription;
-import org.pairwise.generator.SubSetDescription;
+import org.pairwise.generator.pairwise.SetDescription;
+import org.pairwise.generator.pairwise.SubSetDescription;
 
 import java.util.List;
 import java.util.Map;

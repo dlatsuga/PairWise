@@ -1,10 +1,10 @@
 package org.pairwise.generator.pairwise.impl;
 
-import org.pairwise.generator.SetDescription;
-import org.pairwise.generator.SubSetDescription;
 import org.pairwise.generator.pairwise.PairWiseDuplicateChecker;
 import org.pairwise.generator.pairwise.PairWiseGenerator;
 import org.pairwise.generator.pairwise.PairWiseMatcher;
+import org.pairwise.generator.pairwise.SetDescription;
+import org.pairwise.generator.pairwise.SubSetDescription;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -58,7 +58,7 @@ public class DefaultPairWiseGenerator implements PairWiseGenerator {
 
     @Override
     public Map<Integer, List<Object>> generatePairsWiseValues() {
-        Map<Integer, List<Integer>> indexes = generatePairWiseIndexes();
+        Map<Integer, List<Integer>> indexes = generatePairWiseIndexes(); // TODO : Remove sout
         indexes.forEach((k, v) -> System.out.println(k + ":\t" + v));
         System.out.println("***********************************************************");
 

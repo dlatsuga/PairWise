@@ -1,4 +1,4 @@
-package org.pairwise;
+package org.pairwise.other;
 
 import org.pairwise.domain.entity.OrderSingle;
 import org.testng.annotations.DataProvider;
@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import java.math.BigDecimal;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.pairwise.domain.builder.OrderSingleBuilder.anOrderSingle;
 import static org.pairwise.domain.entity.Currency.CHF;
 import static org.pairwise.domain.entity.Currency.USD;

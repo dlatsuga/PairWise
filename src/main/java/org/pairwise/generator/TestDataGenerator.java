@@ -1,37 +1,30 @@
 package org.pairwise.generator;
 
-import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class TestDataGenerator {
     private Object template;
-    private Map<String, Class> enumDescription = new HashMap<>();
+    private SetDescription setDescription = new SetDescription();
 
     public TestDataGenerator forTemplate(Object template) {
         this.template = template;
         return this;
     }
 
-    public TestDataGenerator withEnumData(String field, Class enumData) {
-        enumDescription.put(field, enumData);
+    public TestDataGenerator withEnumData(String fieldToInject, Class enumData) {
+        SubSetDescription subSetDescription = new SubSetDescription(fieldToInject, enumData);
+        setDescription.addSubSet(subSetDescription);
         return this;
     }
 
-    public Object[][] generateTestData() {
-
-        SetDescription setDescription = createSetOfElements();
-
-        return null;
+    public Map<Integer, List<Integer>> generateUniquePairsIndexes() {
+//        setDescription.generateUniquePairsIndexes();
+        return setDescription.generateUniquePairsIndexes();
     }
 
-    private SetDescription createSetOfElements() {
-        SetDescription setDescription = new SetDescription();
-        for (Map.Entry<String, Class> enumEntry : enumDescription.entrySet()) {
-//            setDescription
-
-//            new org.pairwise.generator.SubSetDescription(enumEntry.getKey(), enumEntry.getValue());
-
-        }
-        return null;
+    public Map<Integer, List<Object>> generateUniquePairsValues() {
+//        setDescription.generateUniquePairsIndexes();
+        return setDescription.generateUniquePairsValues();
     }
 }

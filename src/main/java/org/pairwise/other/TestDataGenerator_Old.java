@@ -1,4 +1,4 @@
-package org.pairwise;
+package org.pairwise.other;
 
 import java.beans.Introspector;
 import java.lang.reflect.Field;
@@ -9,16 +9,16 @@ import java.util.Map;
 
 import static java.lang.Enum.valueOf;
 
-public class TestDataGenerator {
+public class TestDataGenerator_Old {
     private Object template;
     private Map<String, Class> enumDescription = new HashMap<>();
 
-    public TestDataGenerator forTemplate(Object template) {
+    public TestDataGenerator_Old forTemplate(Object template) {
         this.template = template;
         return this;
     }
 
-    public TestDataGenerator withEnumData(String field, Class enumData) {
+    public TestDataGenerator_Old withEnumData(String field, Class enumData) {
         enumDescription.put(field, enumData);
         return this;
     }

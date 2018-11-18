@@ -1,4 +1,4 @@
-package org.pairwise;
+package org.pairwise.other;
 
 import org.pairwise.domain.entity.ParameterA;
 import org.pairwise.domain.entity.ParameterB;
@@ -10,7 +10,7 @@ import org.pairwise.generator.SubSetDescription;
 import java.util.List;
 import java.util.Map;
 
-public class MainMy {
+public class MainMaps {
 
     public static void main(String[] args) {
 
@@ -25,20 +25,20 @@ public class MainMy {
         setDescription.addSubSet(parameter_C);
         setDescription.addSubSet(parameter_D);
 
-        setDescription.generateUniquePairs();
-        Map<Integer, List<Integer>> allPairsIndexes = setDescription.getUniquePairsIndexes();
+//        setDescription.generateUniquePairs();
+        Map<Integer, List<Integer>> allPairsIndexes = setDescription.generateUniquePairsIndexes();
 
         allPairsIndexes.forEach((k, v) -> System.out.println(k + ":\t" + v));
         System.out.println("***********************************************************");
 
-        Map<Integer, List<Object>> allPairsValues = setDescription.getUniquePairsValues();
+        Map<Integer, List<Object>> allPairsValues = setDescription.generateUniquePairsValues();
         allPairsValues.forEach((k, v) -> System.out.println(k + ":\t" + v));
         System.out.println("***********************************************************");
 
 //        setDescription.generatePairWise();
-        setDescription.newGeneratePairWise();
-        Map<Integer, List<Object>> pairsWiseValues = setDescription.getPairsWiseValues();
-        pairsWiseValues.forEach((k, v) -> System.out.println(k + ":\t" + v));
+//        setDescription.newGeneratePairWise();
+//        Map<Integer, List<Object>> pairsWiseValues = setDescription.getPairsWiseValues();
+//        pairsWiseValues.forEach((k, v) -> System.out.println(k + ":\t" + v));
     }
 }
 

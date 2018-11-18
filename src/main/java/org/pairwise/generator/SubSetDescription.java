@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SubSetDescription {
-    private int subSetIndex = -1;
+    private Integer subSetIndex = -1;
     private String fieldToInject;
     private Class enumClass;
     private Map<Integer, Object> elementsInSubSet = new HashMap<>();
@@ -22,7 +22,7 @@ public class SubSetDescription {
         return subSetIndex;
     }
 
-    public void setSubSetIndex(int subSetIndex) {
+    public void setSubSetIndex(Integer subSetIndex) {
         this.subSetIndex = subSetIndex;
     }
 
